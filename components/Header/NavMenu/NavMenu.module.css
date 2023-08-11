@@ -4,11 +4,12 @@
 
 .navItem a, .featuresItem {
   padding: 10px;
+  border-bottom: 1px solid transparent;
 }
 
 .navItem a:hover, .featuresItem:hover {
-  border-bottom: 1px solid lightgray;
-  box-sizing: content-box;
+  border-bottom: 1px solid #8D8D8D;
+  box-sizing: border-box;
 }
 
 .navItem:last-child {
