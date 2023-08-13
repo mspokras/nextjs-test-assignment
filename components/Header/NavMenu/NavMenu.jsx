@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
@@ -13,12 +15,15 @@ const NavMenu = () => {
     <nav className={styles.navMenu}>  
       <ul className={styles.navList}>
         <li className={styles.navItem}>
-          <Link href="/">Home</Link>
+          <Link href="/"
+            className={selectedLink === 'Home' ? styles.selected : ''}
+            onClick={() => handleLinkClick('Home')}
+          >Home</Link>
         </li>
         <li className={`${styles.navItem} ${styles.featuresLink}`}>
           <Link href="/features" 
-            className={selectedLink === 'Home' ? styles.selected : ''}
-            onClick={() => handleLinkClick('Home')}
+            className={selectedLink === 'Features' ? styles.selected : ''}
+            onClick={() => handleLinkClick('Features')}
           >
             Features
             <FontAwesomeIcon icon={faChevronDown} className={styles.chevronDownIcon} />

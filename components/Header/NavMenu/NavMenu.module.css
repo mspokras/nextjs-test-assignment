@@ -4,15 +4,13 @@
 
 .navItem a, .featuresItem {
   padding: 10px;
-  border-bottom: 1px solid transparent;
-}
-
-.navItem a:hover, .featuresItem:hover {
-  border-bottom: 1px solid #8D8D8D;
-  box-sizing: border-box;
 }
 
 .navItem a:active {
+  font-weight: 700;
+}
+
+.navItem a.selected {
   font-weight: 700;
 }
 

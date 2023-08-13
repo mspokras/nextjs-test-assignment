@@ -1,0 +1,73 @@
+.contactInfo {
+  width: 491px;
+  height: 647px;
+  margin: 10px;
+  padding: 40px 40px 36px;
+  border-radius: 10px 10px 0 10px;
+  background-color: #000;
+  position: relative;
+}
+
+.infoTitle {
+  color: #fff;
+}
+
+.infoSubtitle {
+  color: #C9C9C9;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.details {
+  margin: 111px 0 159px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: #fff;
+}
+
+.detailsGroup {
+  display: flex;
+}
+
+.detailsImg {
+  margin-right: 25px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMedia {
+  display: flex;
+}
+
+.detailsIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 24px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1B1B;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+.detailsIcon:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.detailsIcon svg {
+  width: 15px;
+}
+
+.circImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

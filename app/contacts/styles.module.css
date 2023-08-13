@@ -1,0 +1,16 @@
+@import '../../styles/fonts.css';
+
+.contact {
+  font-family: 'Poppins', sans-serif;
+}
+
+.contactHeader {
+  margin-top: 34px;
+  text-align: center;
+}
+
+.contactSubtitle {
+  margin-top: 10px;
+  color: #717171;
+  font-weight: 500;
+}

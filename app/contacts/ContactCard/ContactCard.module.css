@@ -1,0 +1,18 @@
+.contactCard {
+  width: 1196px;
+  height: 667px;
+  margin: 50px auto;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.cardSections {
+  display: flex;
+}
+
+.shipImg {
+  position: absolute;
+  bottom: -36px;
+  right: 133px;
+}

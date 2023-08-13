@@ -7,16 +7,16 @@
   column-gap: 60px;
 }
 
-h3 {
+.footerTitle {
   margin-bottom: 20px;
 }
 
-section :not(h2) {
+.footerSection :not(:first-child) {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
 
-section > div:not(:last-child), section li:not(:last-child) {
+.footerSection > div:not(:last-child), .footerSection li:not(:last-child) {
   margin-bottom: 24px;
 }
 

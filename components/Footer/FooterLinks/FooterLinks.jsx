@@ -9,8 +9,8 @@ import styles from "./FooterLinks.module.css";
 const FooterLinks = () => {
   return (
     <div className={styles.footerLinks}>
-      <section>
-        <h3>Reach Us</h3>
+      <section className={styles.footerSection}>
+        <h3 className={styles.footerTitle}>Reach Us</h3>
         <div className={styles.detailsItem}>
           <Image src={phone} alt="phone" className={styles.detailsIcon} />
           <div className={styles.phoneLabel}>+1012 3456 789</div>
@@ -24,8 +24,8 @@ const FooterLinks = () => {
           <div className={styles.locationLabel}>132 Dartmouth Street Boston, <br />Massachusetts 02156 United States</div>
         </div>
       </section>
-      <section>    
-        <h3>Company</h3>
+      <section className={styles.footerSection}>    
+        <h3 className={styles.footerTitle}>Company</h3>
         <ul className={styles.footerList}>
           <li>
             <Link href="/about">About</Link>
@@ -38,8 +38,8 @@ const FooterLinks = () => {
           </li>
         </ul>
       </section>
-      <section>
-        <h3>Legal</h3>
+      <section className={styles.footerSection}>
+        <h3 className={styles.footerTitle}>Legal</h3>
         <ul className={styles.footerList}>
           <li>
             <Link href="/">Privacy Policy</Link>
@@ -55,8 +55,8 @@ const FooterLinks = () => {
           </li>
         </ul>
       </section>
-      <section>
-        <h3>Quick Links</h3>
+      <section className={styles.footerSection}>
+        <h3 className={styles.footerTitle}>Quick Links</h3>
         <ul className={styles.footerList}>
           <li>
             <Link href="/">Techlabz Keybox</Link>
