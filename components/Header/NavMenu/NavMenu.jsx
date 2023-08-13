@@ -3,8 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./NavMenu.module.css";
+import { useState } from "react";
 
 const NavMenu = () => {
+  const [selectedLink, setSelectedLink] = useState('Home');
+  const handleLinkClick = (link) => setSelectedLink(link);
+
   return (
     <nav className={styles.navMenu}>  
       <ul className={styles.navList}>
@@ -12,7 +16,10 @@ const NavMenu = () => {
           <Link href="/">Home</Link>
         </li>
         <li className={`${styles.navItem} ${styles.featuresLink}`}>
-          <Link href="/features">
+          <Link href="/features" 
+            className={selectedLink === 'Home' ? styles.selected : ''}
+            onClick={() => handleLinkClick('Home')}
+          >
             Features
             <FontAwesomeIcon icon={faChevronDown} className={styles.chevronDownIcon} />
           </Link>
@@ -26,16 +33,28 @@ const NavMenu = () => {
           </ul>
         </li>
         <li className={styles.navItem}>
-          <Link href="/blog">Blog</Link>
+          <Link href="/blog"
+            className={selectedLink === 'Blog' ? styles.selected : ''}
+            onClick={() => handleLinkClick('Blog')}
+          >Blog</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/shop">Shop</Link>
+          <Link href="/shop"
+            className={selectedLink === 'Shop' ? styles.selected : ''}
+            onClick={() => handleLinkClick('Shop')}
+          >Shop</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/about">About</Link>
+          <Link href="/about"
+            className={selectedLink === 'About' ? styles.selected : ''}
+            onClick={() => handleLinkClick('About')}
+          >About</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/contacts">Contact</Link>
+          <Link href="/contacts"
+            className={selectedLink === 'Contact' ? styles.selected : ''}
+            onClick={() => handleLinkClick('Contact')}
+          >Contact</Link>
         </li>
       </ul>
     </nav>

@@ -1,0 +1,29 @@
+@import '../../../styles/fonts.css';
+
+.footerLinks {
+  padding: 30px 96px 0 20px;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  column-gap: 60px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+section :not(h2) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+section > div:not(:last-child), section li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.detailsItem {
+  display: flex;
+}
+
+.detailsIcon {
+  margin-right: 25px;
+}

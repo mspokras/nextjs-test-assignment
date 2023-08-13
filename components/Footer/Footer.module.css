@@ -1,0 +1,18 @@
+.footer {
+  padding: 80px 80px 66px;
+  background-color: #000;
+  color: #fff;
+}
+
+.footerContent {
+  display: flex;
+}
+
+.logo {
+  padding-bottom: 45px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}

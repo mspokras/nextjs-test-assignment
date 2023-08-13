@@ -7,11 +7,12 @@ import ContactInformation from "./ContactInformation/ContactInformation";
 import ContactForm from "./ContactForm/ContactForm";
 
 export default function Contact() {
+  //ИСПРАВИТЬ ЕСЛИ ВЫБРАН NAV ТО ЖИРНЫЙ, УБРАТЬ BORDER тогда
   return (
     <div className={styles.contact}>
       <div className={styles.contactHeader}>
-        <h1 className={styles.headerTitle}>Contact Us</h1>
-        <h4 className={styles.headerSubtitle}>Any question or remarks? Just write us a message!</h4>
+        <h1>Contact Us</h1>
+        <h4>Any question or remarks? Just write us a message!</h4>
       </div>
       <div className={styles.contactCard}>
         <ContactInformation />

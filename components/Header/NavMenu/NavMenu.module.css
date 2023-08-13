@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 
-.navItem:last-child {
+.navItem a:active {
   font-weight: 700;
 }
 

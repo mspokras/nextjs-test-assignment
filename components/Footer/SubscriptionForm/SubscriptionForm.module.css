@@ -1,0 +1,56 @@
+@import '../../../styles/fonts.css';
+
+.subscrForm {
+  width: 304px;
+  height: 184px;
+  margin-top: 19px;
+  margin-left: auto;
+  padding: 14px 13px 21px 14px;
+  background-color: #131313;
+  border-radius: 10px;
+}
+
+h3 {
+  margin-bottom: 29px;
+}
+
+.credentials {
+  width: 100%;
+  height: 39px;
+  margin-bottom: 19px;
+  border-radius: 4px;
+  display: flex;
+  overflow: hidden;
+}
+
+.credentials * {
+  height: 100%;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.credentials input {
+  padding-left: 10px;
+  flex: 1;
+  background-color: #1e1e1e;
+  color: #616161;
+  font-size: 11px;
+}
+
+.credentials button {
+  width: 105px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.comment {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.5;
+}
