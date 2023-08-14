@@ -3,7 +3,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import "../styles/globals.css";
+import "./globals.css";
 
 config.autoAddCss = false;
 
@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={styles.globalStyles}>
+    <html lang="en">
       <body>
         <div className="wrapper">
           <Header />
