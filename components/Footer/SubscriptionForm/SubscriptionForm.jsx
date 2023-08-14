@@ -3,7 +3,7 @@ import styles from "./SubscriptionForm.module.css";
 const SubscriptionForm = () => {
   return (
     <form className={styles.subscrForm}>
-      <h3>Join Our Newsletter</h3>
+      <h3 className={styles.subscrTitle}>Join Our Newsletter</h3>
       <div className={styles.credentials}>
         <input type="text" placeholder="Your email address"/>
         <button>Subscribe</button>
