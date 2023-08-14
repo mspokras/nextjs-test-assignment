@@ -12,10 +12,13 @@ import profile from "../../../public/icons/profile.svg";
 import cartWhite from "../../../public/icons/cart-white.svg";
 import profileWhite from "../../../public/icons/profile-white.svg";
 
-const NavMenu = ({ isMenuOpen }) => {
+const NavMenu = ({ isMenuOpen, toggleMenu }) => {
   const [selectedLink, setSelectedLink] = useState('Home');
 
-  const handleLinkClick = (link) => setSelectedLink(link);
+  const handleLinkClick = (link) => {
+    setSelectedLink(link);
+    toggleMenu();
+  }
 
   return (
     <div className={styles.navContainer}>

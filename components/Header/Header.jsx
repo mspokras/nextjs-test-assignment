@@ -26,7 +26,7 @@ const Header = () => {
           <Image src={burgerMenu} alt="Burger Menu" className={styles.burgerIcon} />
         }
       </button>
-      <NavMenu isMenuOpen={isMenuOpen} />
+      <NavMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
     </header>
   );
 };
