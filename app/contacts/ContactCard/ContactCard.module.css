@@ -1,6 +1,5 @@
 .contactCard {
-  width: 1196px;
-  height: 667px;
+  width: 89%;
   margin: 50px auto;
   position: relative;
   background-color: #fff;
@@ -10,10 +9,36 @@
 
 .cardSections {
   display: flex;
+  flex-direction: column;
 }
 
 .shipImg {
+  width: 118px;
+  height: 81px;
   position: absolute;
-  bottom: -36px;
-  right: 133px;
+  bottom: -15px;
+  right: 39.5%;
+}
+
+@media (min-width: 576px) {
+  .contactCard {
+    width: 1196px;
+    height: 667px;
+    margin: 50px auto;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+  }
+
+  .cardSections {
+    flex-direction: row;
+  }
+
+  .shipImg {
+    width: 266px;
+    height: 217px;
+    bottom: -36px;
+    right: 133px;
+  }
 }

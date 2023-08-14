@@ -9,8 +9,26 @@
   text-align: center;
 }
 
+.contactTitle {
+  font-size: 24px;
+}
+
 .contactSubtitle {
   margin-top: 10px;
   color: #717171;
+  font-size: 14px;
   font-weight: 500;
+  margin: 0 auto;
+  width: 250px;
+}
+
+@media (min-width: 576px) {
+  .contactTitle {
+    font-size: 40px;
+  }
+
+  .contactSubtitle {
+    width: auto;
+    font-size: 18px;
+  }
 }

@@ -15,8 +15,11 @@
   color: #fff;
 }
 
-.logo {
+.headerOpen .logo {
   margin-bottom: 57px;
+}
+
+.logo {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 18px;

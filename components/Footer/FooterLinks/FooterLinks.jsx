@@ -15,19 +15,19 @@ const FooterLinks = () => {
           <div className={styles.iconWrapper}>
             <Image src={phone} alt="phone" className={styles.detailsIcon} />
           </div>
-          <div className={styles.phoneLabel}>+1012 3456 789</div>
+          <div className={styles.detailsLabel}>+1012 3456 789</div>
         </div>
         <div className={styles.detailsItem}>
           <div className={styles.iconWrapper}>
             <Image src={email} alt="email" className={styles.detailsIcon} />
           </div>
-          <div className={styles.emailLabel}>demo@gmail.com</div>
+          <div className={styles.detailsLabel}>demo@gmail.com</div>
         </div>
         <div className={styles.detailsItem}>
           <div className={styles.iconWrapper}>
             <Image src={location} alt="location" className={styles.detailsIcon} />
           </div>
-          <div className={styles.locationLabel}>132 Dartmouth Street Boston, <br />Massachusetts 02156 United States</div>
+          <div className={styles.detailsLabel}>132 Dartmouth Street Boston, <br />Massachusetts 02156 United States</div>
         </div>
       </section>
       <section className={styles.footerSection}>    
