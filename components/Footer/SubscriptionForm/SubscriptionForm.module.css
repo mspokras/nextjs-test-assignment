@@ -22,7 +22,7 @@
   overflow: hidden;
 }
 
-.credentials * {
+.subscrInput, .subscrButton {
   height: 100%;
   border: none;
   outline: none;
@@ -37,7 +37,7 @@
   font-size: 11px;
 }
 
-.credentials button {
+.subscrButton {
   width: 105px;
   background-color: #000;
   color: #fff;

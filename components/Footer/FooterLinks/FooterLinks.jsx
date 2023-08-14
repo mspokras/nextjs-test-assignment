@@ -27,7 +27,8 @@ const FooterLinks = () => {
           <div className={styles.iconWrapper}>
             <Image src={location} alt="location" className={styles.detailsIcon} />
           </div>
-          <div className={styles.detailsLabel}>132 Dartmouth Street Boston, <br />Massachusetts 02156 United States</div>
+          <div className={styles.detailsLabel}>132 Dartmouth Street Boston, <br className={styles.br} />
+          Massachusetts 02156 United States</div>
         </div>
       </section>
       <section className={styles.footerSection}>    

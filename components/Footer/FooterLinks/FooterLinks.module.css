@@ -44,7 +44,7 @@
   margin: 0 5px 14px 0;
 }
 
-br {
+.br {
   display: none;
 }
 
@@ -76,7 +76,7 @@ br {
     margin: 0 5px 0 0;
   }
 
-  br {
+  .br {
     display: block;
   }
 }
