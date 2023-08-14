@@ -29,12 +29,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.credentials input {
+.subscrInput {
   padding-left: 10px;
   flex: 1;
   background-color: #1e1e1e;
-  color: #616161;
+  color: #fff;
   font-size: 11px;
+}
+
+.subscrInput::placeholder {
+  color: #616161;
 }
 
 .subscrButton {
