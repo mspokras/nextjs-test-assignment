@@ -1,46 +1,55 @@
 @import '../../styles/fonts.css';
 
 .header {
-  margin: 40px 100px;
+  padding: 30px 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.headerOpen {
+  background-color: #000;
+  color: #fff;
 }
 
 .logo {
+  margin-bottom: 57px;
   font-family: 'Inter', sans-serif;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 18px;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-}
-
-.icons {
-  margin-left: 50px;
-}
-
-.icons * {
-  border: 1px solid black;
-  border-radius: 50%;
-  box-sizing: content-box;
-  overflow: visible;
+.navbarToggler {
+  background: none;
+  border: none;
   cursor: pointer;
+  position: absolute;
+  right: 0;
 }
 
-.profileIcon {
-  width: 16px;
-  height: 17px;
-  padding: 8px;
-}
+@media(min-width: 576px) {
+  .header {
+    padding: 40px 100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.cartIcon {
-  width: 18px;
-  height: 18px;
-  padding: 7px;
-  margin-left: 36px;
+  .headerOpen {
+    background-color: none;
+    color: #000;
+  }
+
+  .logo {
+    width: 140px;
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .navbarToggler {
+    display: none;
+  }
 }

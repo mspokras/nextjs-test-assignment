@@ -1,23 +1,32 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
 
 import NavMenu from "./NavMenu/NavMenu";
-import cart from "../../public/icons/cart.svg";
-import profile from "../../public/icons/profile.svg";
 import styles from "./Header.module.css";
-
+import burgerMenu from "../../public/icons/burger-menu.svg";
+import cross from "../../public/icons/cross.svg";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isMenuOpen && styles.headerOpen}`}>
       <div className={styles.logo}><Link href="/">Logo Here</Link></div>
-      <div className={styles.navigation}>
-        <NavMenu />
-        <div className={styles.icons}>
-          <Image src={profile} alt="Profile" className={styles.profileIcon} />
-          <Image src={cart} alt="Cart" className={styles.cartIcon} />
-        </div>
-      </div>
+      <button type="button" className={styles.navbarToggler} onClick={toggleMenu}>
+        {isMenuOpen ? 
+          <Image src={cross} alt="Cross" className={styles.crossIcon} />
+            :
+          <Image src={burgerMenu} alt="Burger Menu" className={styles.burgerIcon} />
+        }
+      </button>
+      <NavMenu isMenuOpen={isMenuOpen} />
     </header>
   );
 };

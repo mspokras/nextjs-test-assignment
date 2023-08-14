@@ -24,6 +24,14 @@
   display: flex;
 }
 
+.iconWrapper {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
 .detailsIcon {
   margin-right: 25px;
 }

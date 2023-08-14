@@ -12,15 +12,21 @@ const FooterLinks = () => {
       <section className={styles.footerSection}>
         <h3 className={styles.footerTitle}>Reach Us</h3>
         <div className={styles.detailsItem}>
-          <Image src={phone} alt="phone" className={styles.detailsIcon} />
+          <div className={styles.iconWrapper}>
+            <Image src={phone} alt="phone" className={styles.detailsIcon} />
+          </div>
           <div className={styles.phoneLabel}>+1012 3456 789</div>
         </div>
         <div className={styles.detailsItem}>
-          <Image src={email} alt="email" className={styles.detailsIcon} />
+          <div className={styles.iconWrapper}>
+            <Image src={email} alt="email" className={styles.detailsIcon} />
+          </div>
           <div className={styles.emailLabel}>demo@gmail.com</div>
         </div>
         <div className={styles.detailsItem}>
-          <Image src={location} alt="location" className={styles.detailsIcon} />
+          <div className={styles.iconWrapper}>
+            <Image src={location} alt="location" className={styles.detailsIcon} />
+          </div>
           <div className={styles.locationLabel}>132 Dartmouth Street Boston, <br />Massachusetts 02156 United States</div>
         </div>
       </section>
