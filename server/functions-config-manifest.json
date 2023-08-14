@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "functions": {
+    "/about": {},
+    "/blog": {},
+    "/feature1": {},
+    "/contacts": {},
+    "/feature2": {},
+    "/features": {},
+    "/shop": {}
+  }
+}
