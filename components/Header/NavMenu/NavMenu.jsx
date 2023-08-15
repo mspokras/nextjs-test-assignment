@@ -17,7 +17,6 @@ const NavMenu = ({ isMenuOpen, toggleMenu }) => {
 
   const handleLinkClick = (link) => {
     setSelectedLink(link);
-    toggleMenu();
   }
 
   return (
